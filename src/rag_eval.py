@@ -7,7 +7,7 @@ from datasets import Dataset
 import langfuse
 
 def populate_eval_dataset(df_eval_qs: pd.DataFrame, chain: RunnableSequence) -> Dataset:
-    data = {"trace_id": [], "question": [], "answer": [], "contexts": [], "ground_truth": []}
+    data = {"question": [], "answer": [], "contexts": [], "ground_truth": []}
     
     for idx, row in df_eval_qs.iterrows():
         res = chain.invoke({'input': row['question']})

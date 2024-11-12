@@ -14,6 +14,9 @@ from langchain_community.document_loaders import PyPDFLoader
 from src.mle import utils as mle_utils
 
 
+
+
+
 def run(file, embeddings, index_name):
     filename = mle_utils.path_data_raw / file
     path_db = mle_utils.path_data_interm / "chroma_langchain_db"

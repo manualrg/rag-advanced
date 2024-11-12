@@ -28,4 +28,7 @@ dependencies:
     - uvicorn==0.30.1
     - pypdf==4.2.0
     - langfuse==2.50.2
+    - unstructured==0.15.13
+    - unstructured-ingest==0.0.18
+
 
